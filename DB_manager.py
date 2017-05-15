@@ -11,10 +11,8 @@ class DatabaseUtility:
 		self.db = database
 		self.tableName = tableName
 
-		f = open('C:\\Users\\The_Captain\\Desktop\\TPayne Experience\\_Episodes\\_LetsLearn\\026_LLP__SQL_Databases\\password.txt', 'r')
-		p = f.read(); f.close();
 		self.cnx = mysql.connector.connect(user = 'root',
-									password = p,
+									password = 'admin',
 									host = '127.0.0.1')
 		self.cursor = self.cnx.cursor()
 
